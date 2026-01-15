@@ -100,7 +100,8 @@ fn cmd_start(socket: String, foreground: bool) -> Result<()> {
             .init();
 
         let service = VercelService::new(token).context("Failed to create VercelService")?;
-        let server = FgpServer::new(service, &socket_path).context("Failed to create FGP server")?;
+        let server =
+            FgpServer::new(service, &socket_path).context("Failed to create FGP server")?;
         server.serve().context("Server error")?;
     } else {
         // Background mode - daemonize first, THEN create service
@@ -118,10 +119,10 @@ fn cmd_start(socket: String, foreground: bool) -> Result<()> {
                     .with_env_filter("fgp_vercel=debug,fgp_daemon=debug")
                     .init();
 
-                let service = VercelService::new(token)
-                    .context("Failed to create VercelService")?;
-                let server = FgpServer::new(service, &socket_path)
-                    .context("Failed to create FGP server")?;
+                let service =
+                    VercelService::new(token).context("Failed to create VercelService")?;
+                let server =
+                    FgpServer::new(service, &socket_path).context("Failed to create FGP server")?;
                 server.serve().context("Server error")?;
             }
             Err(e) => {
@@ -150,8 +151,8 @@ fn cmd_stop(socket: String) -> Result<()> {
     }
 
     // Read PID
-    let pid_str =
-        std::fs::read_to_string(&pid_file).context("Failed to read PID file - daemon may not be running")?;
+    let pid_str = std::fs::read_to_string(&pid_file)
+        .context("Failed to read PID file - daemon may not be running")?;
     let pid: i32 = pid_str.trim().parse().context("Invalid PID in file")?;
 
     if !pid_matches_process(pid, "fgp-vercel") {

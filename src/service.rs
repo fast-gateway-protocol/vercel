@@ -59,9 +59,9 @@ impl VercelService {
         let limit = Self::get_param_i32(&params, "limit", 20);
         let client = self.client.clone();
 
-        let projects = self.runtime.block_on(async move {
-            client.list_projects(Some(limit)).await
-        })?;
+        let projects = self
+            .runtime
+            .block_on(async move { client.list_projects(Some(limit)).await })?;
 
         Ok(serde_json::json!({
             "projects": projects,
@@ -78,9 +78,9 @@ impl VercelService {
 
         let client = self.client.clone();
 
-        let project = self.runtime.block_on(async move {
-            client.get_project(&project_id).await
-        })?;
+        let project = self
+            .runtime
+            .block_on(async move { client.get_project(&project_id).await })?;
 
         Ok(serde_json::to_value(project)?)
     }
@@ -92,7 +92,9 @@ impl VercelService {
         let client = self.client.clone();
 
         let deployments = self.runtime.block_on(async move {
-            client.list_deployments(project_id.as_deref(), Some(limit)).await
+            client
+                .list_deployments(project_id.as_deref(), Some(limit))
+                .await
         })?;
 
         Ok(serde_json::json!({
@@ -110,9 +112,9 @@ impl VercelService {
 
         let client = self.client.clone();
 
-        let deployment = self.runtime.block_on(async move {
-            client.get_deployment(&deployment_id).await
-        })?;
+        let deployment = self
+            .runtime
+            .block_on(async move { client.get_deployment(&deployment_id).await })?;
 
         Ok(serde_json::to_value(deployment)?)
     }
@@ -126,9 +128,9 @@ impl VercelService {
 
         let client = self.client.clone();
 
-        let events = self.runtime.block_on(async move {
-            client.get_deployment_events(&deployment_id).await
-        })?;
+        let events = self
+            .runtime
+            .block_on(async move { client.get_deployment_events(&deployment_id).await })?;
 
         Ok(serde_json::json!({
             "events": events,
@@ -140,9 +142,9 @@ impl VercelService {
     fn get_user(&self) -> Result<Value> {
         let client = self.client.clone();
 
-        let user = self.runtime.block_on(async move {
-            client.get_user_raw().await
-        })?;
+        let user = self
+            .runtime
+            .block_on(async move { client.get_user_raw().await })?;
 
         Ok(user)
     }
@@ -156,9 +158,9 @@ impl VercelService {
 
         let client = self.client.clone();
 
-        let result = self.runtime.block_on(async move {
-            client.list_env_vars(&project_id, target.as_deref()).await
-        })?;
+        let result = self
+            .runtime
+            .block_on(async move { client.list_env_vars(&project_id, target.as_deref()).await })?;
 
         Ok(result)
     }
@@ -176,10 +178,8 @@ impl VercelService {
             .to_string();
 
         // Parse target array if provided
-        let target: Option<Vec<String>> = params
-            .get("target")
-            .and_then(|v| v.as_array())
-            .map(|arr| {
+        let target: Option<Vec<String>> =
+            params.get("target").and_then(|v| v.as_array()).map(|arr| {
                 arr.iter()
                     .filter_map(|v| v.as_str().map(|s| s.to_string()))
                     .collect()
@@ -190,8 +190,12 @@ impl VercelService {
         let client = self.client.clone();
 
         let result = self.runtime.block_on(async move {
-            let target_refs: Option<Vec<&str>> = target.as_ref().map(|v| v.iter().map(|s| s.as_str()).collect());
-            client.set_env_var(&project_id, &key, &value, target_refs, env_type.as_deref()).await
+            let target_refs: Option<Vec<&str>> = target
+                .as_ref()
+                .map(|v| v.iter().map(|s| s.as_str()).collect());
+            client
+                .set_env_var(&project_id, &key, &value, target_refs, env_type.as_deref())
+                .await
         })?;
 
         Ok(result)
@@ -205,9 +209,9 @@ impl VercelService {
 
         let client = self.client.clone();
 
-        let result = self.runtime.block_on(async move {
-            client.list_domains(&project_id).await
-        })?;
+        let result = self
+            .runtime
+            .block_on(async move { client.list_domains(&project_id).await })?;
 
         Ok(result)
     }
@@ -220,9 +224,9 @@ impl VercelService {
 
         let client = self.client.clone();
 
-        let result = self.runtime.block_on(async move {
-            client.redeploy(&deployment_id).await
-        })?;
+        let result = self
+            .runtime
+            .block_on(async move { client.redeploy(&deployment_id).await })?;
 
         Ok(result)
     }
@@ -428,10 +432,16 @@ impl FgpService for VercelService {
 
         match result {
             Ok(true) => {
-                checks.insert("vercel_api".into(), HealthStatus::healthy_with_latency(latency));
+                checks.insert(
+                    "vercel_api".into(),
+                    HealthStatus::healthy_with_latency(latency),
+                );
             }
             Ok(false) => {
-                checks.insert("vercel_api".into(), HealthStatus::unhealthy("API returned error"));
+                checks.insert(
+                    "vercel_api".into(),
+                    HealthStatus::unhealthy("API returned error"),
+                );
             }
             Err(e) => {
                 checks.insert("vercel_api".into(), HealthStatus::unhealthy(e.to_string()));

@@ -94,6 +94,7 @@ pub struct DeploymentEvent {
 }
 
 /// Vercel user info.
+#[allow(dead_code)]
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
 pub struct User {
@@ -107,6 +108,7 @@ pub struct User {
 }
 
 /// Paginated response wrapper.
+#[allow(dead_code)]
 #[derive(Debug, Deserialize)]
 pub struct PaginatedResponse<T> {
     #[serde(alias = "projects", alias = "deployments")]
@@ -116,6 +118,7 @@ pub struct PaginatedResponse<T> {
 }
 
 /// Pagination info.
+#[allow(dead_code)]
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Pagination {
     #[serde(default)]

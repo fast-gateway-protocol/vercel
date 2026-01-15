@@ -1,0 +1,122 @@
+[
+  {
+    "session_id": "10296741-0b3a-4bd0-95ec-07fc3a823bb1",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/10296741-0b3a-4bd0-95ec-07fc3a823bb1.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "add READMEs to fly neon vercel repos"
+  },
+  {
+    "session_id": "10296741-0b3a-4bd0-95ec-07fc3a823bb1",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/10296741-0b3a-4bd0-95ec-07fc3a823bb1.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "run benchmarks on fly neon vercel daemons"
+  },
+  {
+    "session_id": "10296741-0b3a-4bd0-95ec-07fc3a823bb1",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/10296741-0b3a-4bd0-95ec-07fc3a823bb1.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "fix the fly.apps authorization error"
+  },
+  {
+    "session_id": "c24ce4c7-c6d3-41fe-a230-9f8271649bec",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/c24ce4c7-c6d3-41fe-a230-9f8271649bec.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "add topics to all the repos"
+  },
+  {
+    "session_id": "c24ce4c7-c6d3-41fe-a230-9f8271649bec",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/c24ce4c7-c6d3-41fe-a230-9f8271649bec.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "update Cargo.toml repo URLs to new org"
+  },
+  {
+    "session_id": "c24ce4c7-c6d3-41fe-a230-9f8271649bec",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/c24ce4c7-c6d3-41fe-a230-9f8271649bec.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "yes commit and push all repos"
+  },
+  {
+    "session_id": "c24ce4c7-c6d3-41fe-a230-9f8271649bec",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/c24ce4c7-c6d3-41fe-a230-9f8271649bec.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "update READMEs with new org URLs"
+  },
+  {
+    "session_id": "c24ce4c7-c6d3-41fe-a230-9f8271649bec",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/c24ce4c7-c6d3-41fe-a230-9f8271649bec.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "plan",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Do you have any other suggestions in terms of cleaning up the public facing repository, adding polish and documentation, and just getting ready to publish it and have real users?"
+  },
+  {
+    "session_id": "c24ce4c7-c6d3-41fe-a230-9f8271649bec",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/c24ce4c7-c6d3-41fe-a230-9f8271649bec.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "Hey, not sure what happened here or why he got stuck, but please try to proceed."
+  },
+  {
+    "session_id": "c24ce4c7-c6d3-41fe-a230-9f8271649bec",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/c24ce4c7-c6d3-41fe-a230-9f8271649bec.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "try again"
+  },
+  {
+    "session_id": "b084daa3-6131-406b-a78c-8246feeb00fe",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/b084daa3-6131-406b-a78c-8246feeb00fe.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "add binary releases to github actions"
+  },
+  {
+    "session_id": "57ed67ac-2bd7-4367-9402-225a5ad61c75",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/57ed67ac-2bd7-4367-9402-225a5ad61c75.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "push all repos to github"
+  },
+  {
+    "session_id": "57ed67ac-2bd7-4367-9402-225a5ad61c75",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/57ed67ac-2bd7-4367-9402-225a5ad61c75.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "test fgp install with browser manifest"
+  },
+  {
+    "session_id": "b084daa3-6131-406b-a78c-8246feeb00fe",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/b084daa3-6131-406b-a78c-8246feeb00fe.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "are you stuck?"
+  },
+  {
+    "session_id": "b084daa3-6131-406b-a78c-8246feeb00fe",
+    "transcript_path": "/Users/wolfgangschoenberger/.claude/projects/-Users-wolfgangschoenberger-Projects-fgp/b084daa3-6131-406b-a78c-8246feeb00fe.jsonl",
+    "cwd": "/Users/wolfgangschoenberger/Projects/fgp/vercel",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "UserPromptSubmit",
+    "prompt": "add binary releases to github actions"
+  }
+]

@@ -46,10 +46,7 @@ impl VercelClient {
             anyhow::bail!("API request failed: {} - {}", status, text);
         }
 
-        response
-            .json()
-            .await
-            .context("Failed to parse response")
+        response.json().await.context("Failed to parse response")
     }
 
     /// Make an authenticated POST request.
@@ -73,10 +70,7 @@ impl VercelClient {
             anyhow::bail!("API request failed: {} - {}", status, text);
         }
 
-        response
-            .json()
-            .await
-            .context("Failed to parse response")
+        response.json().await.context("Failed to parse response")
     }
 
     /// Check if the client can connect to Vercel API.
@@ -150,6 +144,7 @@ impl VercelClient {
     }
 
     /// Get current user info.
+    #[allow(dead_code)]
     pub async fn get_user(&self) -> Result<User> {
         #[derive(Deserialize)]
         struct UserResponse {

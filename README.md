@@ -5,7 +5,7 @@ Fast Vercel operations via FGP daemon. Manage projects, deployments, and logs wi
 ## Installation
 
 ```bash
-git clone https://github.com/wolfiesch/fgp-vercel.git
+git clone https://github.com/fast-gateway-protocol/vercel.git
 cd fgp-vercel
 cargo build --release
 ```
